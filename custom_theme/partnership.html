@@ -1,0 +1,92 @@
+<!-- faq begin -->
+<div class="partner_shipmain paddingtb pt-5" id="Partnerships">
+    <div class="container">
+        <div class="row">
+            <img src="{{ config.extra.partnership.bg_image}}" class="parner_icon_pos" alt="">
+            <div class="col-12">
+                <div class="perner_shiptext">
+                    <div class="pertne_text">
+                        <p>{{ config.extra.partnership.title}}</p>
+                        <h2>{{ config.extra.partnership.desc}}
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for item in config.extra.partnership.cards %}
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="pernership_card">
+                    <div class="pertne_logo">
+                        <img src="{{ item.image }}" class="img-fluid" alt="">
+                    </div>
+                    <div class="partner_text">
+                        <h5>{{ item.title }}</h5>
+                        <p>{{ item.desc }}</p>
+                        <div class="seemobtn">
+                            <a href="javascript:void()"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- <div class="col-lg-4 col-md-6 col-12">
+                <div class="pernership_card">
+                    <div class="pertne_logo">
+                        <img src="./assets/images/pertner/partner_02.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="partner_text">
+                        <h5>Eureka Network</h5>
+                        <p>Leading SME on privacy preserving cross healthcare organization data analysis</p>
+                        <div class="seemobtn">
+                            <a href="javascript:void()"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="pernership_card">
+                    <div class="pertne_logo">
+                        <img src="./assets/images/pertner/partner_03.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="partner_text">
+                        <h5>Eureka Network</h5>
+                        <p>Leading SME on privacy preserving cross healthcare organization data analysis</p>
+                        <div class="seemobtn">
+                            <a href="javascript:void()"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="pernership_card">
+                    <div class="pertne_logo">
+                        <img src="./assets/images/pertner/partner_04.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="partner_text">
+                        <h5>Eureka Network</h5>
+                        <p>Leading SME on privacy preserving cross healthcare organization data analysis</p>
+                        <div class="seemobtn">
+                            <a href="javascript:void()"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="pernership_card">
+                    <div class="pertne_logo">
+                        <img src="./assets/images/pertner/partner_05.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="partner_text">
+                        <h5>Eureka Network</h5>
+                        <p>Leading SME on privacy preserving cross healthcare organization data analysis</p>
+                        <div class="seemobtn">
+                            <a href="javascript:void()"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- faq end -->

@@ -1,0 +1,120 @@
+<!-- subscribe begin -->
+<div class="recent_work_main" id="recentwork">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="recent_card">
+                    <div class="recent_text">
+                        <h2>{{ config.extra.recent_work.title }} </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% for item in config.extra.recent_work.cards %}
+        <div class="recent_cards">
+            <div class="align-items-baseline row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="recent_imgsec">
+                        <div class="recent_img">
+                            <img src="{{ item.image }}" class="img-fluid" alt="">
+                        </div>
+                        <div class="recent_usnam">
+                            {{ item.name }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="recenttextsec">
+                        <h5 class="text-white mb-4">{{ item.desc }}</h5>
+                        <p class="text-white font-weight-lighter">{{ item.date }}</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12 text-right lemalignbtn">
+                    <button class="btn btn_learnmore">Learn more</button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <!-- <div class="recent_cards">
+            <div class="align-items-baseline row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="recent_imgsec">
+                        <div class="recent_img">
+                            <img src="./assets/images/client-1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="recent_usnam">
+                            Journal article
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="recenttextsec">
+                        <h5 class="text-white mb-4">Twenty years of real-world data to estimate chronic kidney
+                            disease
+                            prevalence and staging in an unselected population</h5>
+                        <p class="text-white font-weight-lighter">January 23, 2023</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12 text-right lemalignbtn">
+                    <button class="btn btn_learnmore">Learn more</button>
+                </div>
+            </div>
+        </div>
+        <div class="recent_cards">
+            <div class="align-items-baseline row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="recent_imgsec">
+                        <div class="recent_img">
+                            <img src="./assets/images/client-1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="recent_usnam">
+                            Journal article
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="recenttextsec">
+                        <h5 class="text-white mb-4">Twenty years of real-world data to estimate chronic kidney
+                            disease
+                            prevalence and staging in an unselected population</h5>
+                        <p class="text-white font-weight-lighter">January 23, 2023</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12 text-right lemalignbtn">
+                    <button class="btn btn_learnmore">Learn more</button>
+                </div>
+            </div>
+        </div>
+        <div class="recent_cards">
+            <div class="align-items-baseline row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="recent_imgsec">
+                        <div class="recent_img">
+                            <img src="./assets/images/client-1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="recent_usnam">
+                            Journal article
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="recenttextsec">
+                        <h5 class="text-white mb-4">Twenty years of real-world data to estimate chronic kidney
+                            disease
+                            prevalence and staging in an unselected population</h5>
+                        <p class="text-white font-weight-lighter">January 23, 2023</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12 text-right lemalignbtn">
+                    <button class="btn btn_learnmore">Learn more</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mt-5">
+            <div class="text-center">
+                <button class="btn seemorebtn">See more</button>
+            </div>
+        </div> -->
+    </div>
+</div>
+<!-- subscribe end -->

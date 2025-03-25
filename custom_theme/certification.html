@@ -1,0 +1,47 @@
+<!-- testimonial begin -->
+<div class="testimonial" id="Certifications">
+    <div class="container paddingtb">
+        <img src="{{ config.extra.certification.left_bg_image }}" class="certificate_leftshape" alt="">
+        <img src="{{ config.extra.certification.right_bg_image }}" class="certificate_rightshape" alt="">
+        <div class="row testimonial-mobile-screen">
+            <div class="col-xl-6 col-lg-6 col-12">
+                <div class="teamtitlebox">
+                    <h5>{{ config.extra.certification.title }}</h5>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-12">
+                <p class="font-weight-light text-white">{{ config.extra.certification.desc }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                {% for item in config.extra.certification.cards %}
+                <div class="certificste_Card">
+                    <div class="certificate_img">
+                        <img src="{{ item.image }}" alt="">
+                    </div>
+                    <div class="cartifseprator"></div>
+                    <div class="certidicate_text">
+                        <h5>{{ item.title }}</h5>
+                        <p>{{ item.desc }} </p>
+                        <a href="javascript:void()">{{ item.learn_more }}</a>
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- <div class="certificste_Card ">
+                    <div class="certificate_img">
+                        <img src="./assets/images/certificate_logo_01.png" alt="">
+                    </div>
+                    <div class="cartifseprator"></div>
+                    <div class="certidicate_text">
+                        <h5>Certified SME</h5>
+                        <p>Certification for standardization of healthcare data according to the OMOP Common Data
+                            Model.</p>
+                        <a href="javascript:void()">Learn more</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- testimonial end -->

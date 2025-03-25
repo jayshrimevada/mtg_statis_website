@@ -1,0 +1,210 @@
+!-- preloader begin-->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- scroll to top -->
+    <div class="scroll-to-top my-btn">
+        <i class="fas fa-long-arrow-alt-up"></i>
+    </div>
+    <!-- scroll to top -->
+
+    <!-- header begin -->
+    <div class="header header-3">
+        <!-- <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-9">
+                        <div class="top-left">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-envelope"></i>example@info.com</a></li>
+                                <li><a href="#"><i class="fas fa-phone"></i>+880 1234 567890</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3">
+                        <div class="top-right">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="bottom-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 d-xl-flex d-lg-flex d-block align-items-center">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-7 d-xl-block d-lg-block d-flex align-items-center">
+                                <div class="logo">
+                                    <a href="#"><img src=" {{ config.extra.configuration.logo }}" alt="LOGO"></a>
+                                </div>
+                            </div>
+                            <div class="d-xl-none d-lg-none d-block col-5">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <!-- <i class="fas fa-bars fas text-white"></i> -->
+                                    <img src="{{ config.extra.configuration.nav_icon }}" class="img-fluid" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-10 col-lg-10">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    {% if config.extra.configuration.services_section %}
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#service">{{ config.extra.configuration.services }}</a>
+                                        </li>
+                                    {% endif %}
+
+                                    {% if config.extra.configuration.about_section %}
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#about">{{ config.extra.configuration.about_us }}</a>
+                                        </li>
+                                    {% endif %}
+
+                                    {% if config.extra.configuration.how_we_work_section %}
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#howwework">{{ config.extra.configuration.how_we_work }}</a>
+                                        </li>
+                                    {% endif %}
+                                    {% if config.extra.configuration.team_section %}
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#team">{{ config.extra.configuration.team }}</a>
+                                        </li>
+                                    {% endif %}
+                                    
+                                    {% if config.extra.configuration.certifications_section %}
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#Certifications">{{ config.extra.configuration.certifications }}</a>
+                                    </li>
+                                    {% endif %}
+
+                                    {% if config.extra.configuration.partnerships_section %}
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#Partnerships">{{ config.extra.configuration.partnerships }}</a>
+                                        </li>
+                                    {% endif %}
+                                    
+                                    {% if config.extra.configuration.recentwork_section %}
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#recentwork">{{ config.extra.configuration.recentwork }}</a>
+                                    </li>
+                                    {% endif %}
+                                    {% if config.extra.configuration.news_section %}
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#news">{{ config.extra.configuration.news }}</a>
+                                    </li>
+                                    {% endif %}
+                                    
+                                    {% if config.extra.configuration.contact_us_section %}
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact">{{ config.extra.configuration.contact_us }}</a>
+                                    </li>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- banner begin -->
+    <div class="banner banner-3" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-7">
+                    <div class="banner-txt">
+                        <h5 class="h5_title">{{ config.extra.configuration.title }}</h5>
+                        <h1 class="h1_title">{{ config.extra.configuration.desc }}</h1>
+                        <div class="btn-box">
+                            <a href="#contact" class="my-btn">{{ config.extra.configuration.contact_us }}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 d-xl-flex d-lg-flex d-block align-items-center">
+                    <!-- <div class="part-img">
+                        <img src="assets/images/banner-img.png" alt="banner image">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+    <!-- service begin -->
+    {% if config.extra.configuration.services_section %}
+        {% include "service.html" %}
+    {% endif %}
+    <!-- service end -->
+    {% if config.extra.configuration.about_section %}
+        <!-- about begin -->
+        {% include "about.html" %}
+        <!-- about end -->
+    {% endif %}
+
+    <!-- about-2 begin -->
+    {% if config.extra.configuration.how_we_work_section %}
+        {% include "work_section.html" %}
+    {% endif %}
+    <!-- about-2 end -->
+<div class="grediant_bg">
+    {% if config.extra.configuration.team_section %}
+        {% include "team.html" %}
+    {% endif %}
+
+    <!-- testimonial begin -->
+    {% if config.extra.configuration.certifications_section %}
+        {% include "certification.html" %}
+    {% endif %}
+
+    <!-- testimonial end -->
+</div>
+    <!-- faq begin -->
+    {% if config.extra.configuration.partnerships_section %}
+        {% include "partnership.html" %}
+    {% endif %}
+    <!-- faq end -->
+
+    <!-- subscribe begin -->
+    {% if config.extra.configuration.recentwork_section %}
+        {% include "recent_work.html" %}
+    {% endif %}
+    <!-- subscribe end -->
+
+    <!-- news begin -->
+    {% if config.extra.configuration.news_section %}
+        {% include "news.html" %}
+    {% endif %}
+    <!-- news end -->
+
+    <!-- footer begin -->
+    <div class="footer_bg" id="contact">
+        <div class="main-footer">
+            <div class="container">
+                 <!-- contact us begin -->
+                {% if config.extra.configuration.contact_us_section %}
+                    {% include "contact_us.html" %}
+                <!-- contact us end -->
+                {% endif %}
+
+                {% if config.extra.configuration.footer_section %}
+                    {% include "footer.html" %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- footer end -->
+
+    

@@ -1,0 +1,80 @@
+<div class="row pt-5 pb-0 footer-text-description">
+    <div class="col-xl-4 col-lg-3 col-md-6">
+        <div class="f-about">
+            <img src="{{ config.extra.footer.logo }}" alt="LOGO" />
+            <h5 class="mt-4 text-white">{{ config.extra.footer.title }}</h5>
+            <p class="mt-3 text-white">{{ config.extra.footer.address }}</p>
+        </div>
+    </div>
+    <div class="col-xl-8 col-lg-9 col-md-6 col-12 mt-5">
+        <div class="form-row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-6">
+                <div class="links">
+                    <ul>
+                        {% if config.extra.configuration.services_section %}
+                        <li><a href="#service">{{ config.extra.configuration.services }}</a></li>
+                        {% endif %}
+
+                        {% if config.extra.configuration.about_section %}
+                        <li><a href="#about">{{ config.extra.configuration.about_us }}</a></li>
+                        {% endif %}
+
+                        {% if config.extra.configuration.how_we_work_section %}
+                        <li><a href="#howwework">{{ config.extra.configuration.how_we_work }}</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-6">
+                <div class="links">
+                    <ul>
+                        {% if config.extra.configuration.team_section %}
+                        <li><a href="#team">{{ config.extra.configuration.team }}</a></li>
+                        {% endif %}
+
+                        {% if config.extra.configuration.certifications_section %}
+                        <li><a href="#Certifications">{{ config.extra.configuration.certifications }}</a></li>
+                        {% endif %}
+
+                        {% if config.extra.configuration.partnerships_section %}
+                        <li><a href="#Partnerships">{{ config.extra.configuration.partnerships }}</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-6">
+                <div class="links">
+                    <ul>
+                        {% if config.extra.configuration.recentwork_section %}
+                        <li><a href="#recentwork">{{ config.extra.configuration.recentwork }}</a></li>
+                        {% endif %}
+
+                        {% if config.extra.configuration.news_section %}
+                        <li><a href="#news">{{ config.extra.configuration.news }}</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-6">
+                <div class="links">
+                    <h3>{{ config.extra.footer.follow_us }}</h3>
+                    <ul class="social_connect">
+                        <li> <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="copyright">
+    <div class="row justify-content-xl-between justify-content-lg-between justify-content-center">
+        <div class="col-xl-5 col-lg-5 col-md-6">
+            <div class="part-txt">
+                <p>{{ config.extra.footer.copyright_text }}</p>
+            </div>
+        </div>
+    </div>
+</div>

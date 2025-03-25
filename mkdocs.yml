@@ -1,0 +1,333 @@
+site_name: mtg-website
+site_url: http://mtg.pt
+theme:
+  name: null
+  custom_dir: custom_theme/
+extra:
+  style: ./assets/css/style.css
+  about:
+    bg_image: ./assets/images/bg_shape/about_img.png
+    label: about us
+    title: We are expert biomedical scientists, doctors, academics and engineers
+    desc: We are passionate about understanding diseases, injuries and improving the
+          quality of
+          healthcare systems.
+          Our lab covers every aspect of the study lifecycle for Real World Evidence and
+          Implementation Science, fostering truly collaborative and federated research with
+          institutions across the globe.
+  work_section:
+    bg_image: ./assets/images/bg_shape/how_we_work.png
+    title: HOW WE WORK
+    desc: We conduct our work according to the highest standard of
+          <span>transparency</span>,
+          <span>privacy</span> and <span>rigor</span>.
+    rectangle_icon: ./assets/images/board/Rectangle_icon.svg
+    how_we_work_image: ./assets/images/we_work/we_work_01.svg
+    how_we_work:
+      - title: Zero Trust Model
+        desc: No need to share data access. We develop and validate processing pipelines without ever seeing the actual data.
+      - title: Any residency requirements
+        desc: We work with data in the cloud, on-premises or both at once, without the need to move data anywhere.
+      - title: Any Hardware, or No Hardware
+        desc: Our data processing pipelines run on any hardware. We provide temporary hassle-free hardware if you need computing power.
+      - title: Federated Data Processing
+        desc: We process data on multiple sites, train statistical and machine learning models over data distributed anywhere.
+      - title: Complete Transparency
+        desc: We log all data processing, foster code sharing for open science and study reproduction by peers.
+      - title: Secure Collaboration
+        desc: We orchestrate partner institutions to collaborate in any part of study lifecycle securely.
+
+
+    board_title_line_one: board
+    board_title_line_two: Senior Management
+
+    board_desc: We are passionate academics in biomedical science and
+                medicine, with a proven professional track record in national and international institutions
+                both in public and private sectors.
+
+
+    management_team:
+      - image: ./assets/images/board/board_01.png
+        name: Tiago Taveira-Gomes
+        stream: MD ME MSc PhD
+        designation: Chief Executive Officer
+      - image: ./assets/images/board/board_02.png
+        name: Teresa Magalhães
+        stream: MD PhD
+        designation: Chief Executive Officer
+      - image: ./assets/images/board/board_03.png
+        name: Ricardo Dinis-Oliveira
+        stream: PharmD PhD
+        designation: Chief Executive Officer
+
+  team: 
+    bg_image: ./assets/images/bg_shape/our_team.png
+    title_line_one: TEAM
+    title_line_two: Our Team
+    desc: We are a dedicated team of medical doctors,
+          engineers, data scientists and academics on a mission to improve population health and
+          sustainability of healthcare systems.
+    member_in_icon: ./assets/images/board/in_icon.png
+    member_linkedin_icon: ./assets/images/board/id_icon.png
+    members:
+      - image: ./assets/images/team/team.png
+        name: Nome e sobrenome
+        stream: MD ME
+        designation: Chief Executive Officer
+      
+      - image: ./assets/images/team/team.png
+        name: Nome e sobrenome
+        stream: MD ME
+        designation: Chief Executive Officer
+      
+      - image: ./assets/images/team/team.png
+        name: Nome e sobrenome
+        stream: MD ME
+        designation: Chief Executive Officer
+      
+      - image: ./assets/images/team/team.png
+        name: Nome e sobrenome
+        stream: MD ME
+        designation: Chief Executive Officer
+      
+      - image: ./assets/images/team/team.png
+        name: Nome e sobrenome
+        stream: MD ME
+        designation: Chief Executive Officer
+
+      - image: ./assets/images/team/team.png
+        name: Nome e sobrenome
+        stream: MD ME
+        designation: Chief Executive Officer
+
+      - image: ./assets/images/team/team.png
+        name: Nome e sobrenome
+        stream: MD ME
+        designation: Chief Executive Officer
+      
+      - image: ./assets/images/team/team.png
+        name: Nome e sobrenome
+        stream: MD ME
+        designation: Chief Executive Officer
+
+    advisor:
+      bg_image: ./assets/images/bg_shape/advisors.png
+      title_line_one: Experts
+      title_line_two: Advisors
+      desc: We work closely with clinical experts to ensure our
+            science is well aligned the
+            current challenges in medicine and healthcare institutions.
+      
+      members:
+        - image: ./assets/images/expert/expert_01.png
+          name: Cristina Gavina
+          stream: MD PhD
+          designation: Cardiology
+          arrow_icon: ./assets/images/board/Rectangle_icon.svg
+
+        - image: ./assets/images/expert/expert_02.png
+          name: Francisco Araújo
+          stream: MD PhD
+          designation: Internal Medicine
+          arrow_icon: ./assets/images/board/Rectangle_icon.svg
+        
+        - image: ./assets/images/expert/expert_03.png
+          name: Carla Santos-Araújo
+          stream: MD PhD
+          designation: Nephrology 
+          arrow_icon: ./assets/images/board/Rectangle_icon.svg
+        
+        - image: ./assets/images/expert/expert_04.png
+          name: Mariana Brandão
+          stream: MD PhD
+          designation: Oncology
+          arrow_icon: ./assets/images/board/Rectangle_icon.svg
+        
+        - image: ./assets/images/expert/expert_05.png
+          name: Dulce Pinto
+          stream: RN MSc MBA
+          designation: Executive Management
+          arrow_icon: ./assets/images/board/Rectangle_icon.svg
+        
+        - image: ./assets/images/expert/expert_06.png
+          name: Cristina Jácome
+          stream: MSc PhD
+          designation: Physiotherapy
+          arrow_icon: ./assets/images/board/Rectangle_icon.svg                    
+
+  certification:
+    left_bg_image: ./assets/images/bg_shape/certificate_left.png
+    right_bg_image: ./assets/images/bg_shape/certificate_right.png
+    title: Certifications
+    desc: We are recognized at national and international level to conduct R&D
+          activities in Real World
+          Evidence and Implementation Science.
+
+    cards:
+      - image: ./assets/images/certificate_logo.png
+        title: Accredited CRO
+        desc: Recognition by Portuguese Innovation Agency to conduct R&D under SIFIDE incentive
+              program.
+        learn_more: Learn more
+      
+      - image: ./assets/images/certificate_logo_01.png
+        title: Certified SME
+        desc: Certification for standardization of healthcare data according to the OMOP Common Data
+              Model.
+        learn_more: Learn more
+
+  partnership:
+    bg_image: ./assets/images/bg_shape/partnership_shap.png
+    title: PARTNERSHIPS
+    desc: We conduct our work in close collaboration with <span>healthcare
+          institutions</span>,
+          <span>academia</span>,
+          <span>industry</span>, <span>medical societies</span> and <span>institutes across
+              the
+              globe</span>.
+    cards:
+      - image: ./assets/images/pertner/partner_01.png
+        title: Eureka Network
+        desc: Leading SME on privacy preserving cross healthcare organization data analysis
+
+      - image: ./assets/images/pertner/partner_02.png
+        title: Eureka Network
+        desc: Leading SME on privacy preserving cross healthcare organization data analysis
+
+      - image: ./assets/images/pertner/partner_01.png
+        title: Eureka Network
+        desc: Leading SME on privacy preserving cross healthcare organization data analysis
+
+      - image: ./assets/images/pertner/partner_02.png
+        title: Eureka Network
+        desc: Leading SME on privacy preserving cross healthcare organization data analysis
+
+      - image: ./assets/images/pertner/partner_02.png
+        title: Eureka Network
+        desc: Leading SME on privacy preserving cross healthcare organization data analysis
+  
+  contact_us:
+    footertitle: CONTACT
+    desc: Reach out to us for any  <span>enquires</span>, <span>applications</span>,
+          <span>suggestions</span>
+          or <span>ideas</span>.
+    desc_line_two: All messages are very welcome. 
+                    We usually respond within few minutes.
+
+    form_url: ""
+    btn_text: Send message
+
+  footer:
+    logo: assets/images/footer_logo.svg"
+    title: Real World Evidence, Implementation Science, Scientific
+          Consulting
+    address: Rua Professor Joaquim Bastos <br> Porto, 4200-604, PT
+
+
+    terms_and_conds_text: Terms & Conds
+    privacy_policy_text: Privacy Policy
+    copyright_text: Copyright © 2019 MTG
+
+    follow_us: Follow us
+
+  recent_work:
+    title: Recent work
+    cards:
+      - image: ./assets/images/client-1.jpg
+        name: Journal article
+        desc: Twenty years of real-world data to estimate chronic kidney
+              disease
+              prevalence and staging in an unselected population
+        date: January 23, 2023
+      
+      - image: ./assets/images/client-1.jpg
+        name: Journal article
+        desc: Twenty years of real-world data to estimate chronic kidney
+              disease
+              prevalence and staging in an unselected population
+        date: January 23, 2023 
+
+      - image: ./assets/images/client-1.jpg
+        name: Journal article
+        desc: Twenty years of real-world data to estimate chronic kidney
+              disease
+              prevalence and staging in an unselected population
+        date: January 23, 2023
+      
+      - image: ./assets/images/client-1.jpg
+        name: Journal article
+        desc: Twenty years of real-world data to estimate chronic kidney
+              disease
+              prevalence and staging in an unselected population
+        date: January 23, 2023
+
+      - image: ./assets/images/client-1.jpg
+        name: Journal article
+        desc: Twenty years of real-world data to estimate chronic kidney
+              disease
+              prevalence and staging in an unselected population
+        date: January 23, 2023
+
+  service:
+    title: OUR SERVICES
+    desc: We provide expert medical and scientific consulting in
+    bg_image: ./assets/images/bg_shape/our_services.png
+    rectangle_icon: ./assets/images/board/Rectangle_icon.svg
+    services:
+      - title: Machine Learning
+        desc: Development and validation of machine learning models, informed by deep
+              understanding of medicine and life sciences.
+      - title: Data Science
+        desc: Exploratory analysis, hypothesis testing, classical and modern statistical
+              modeling, interpreted in the light of clinical practice.
+      
+      - title: Data Engineering
+        desc: Development of data transformation pipelines of any complexity that capture the
+              intricacies of healthcare data of any nature.
+      - title: Study Implementation
+        desc: Study deployment into venue. Validation and impact assessment of implementation
+              science studies in the real world setting.
+      - title: Software Development
+        desc: High performance software for mobile, web and desktop, meticulously tailored to
+                                        meet demanding medical and scientific requirements.
+      - title: Expert Consulting
+        desc: Expert medical assessment and consulting on cardiovascular, mental health,
+                                        preventive medicine, trauma, regulatory, insurance, and legal medicine.
+      - title: Medical Writing
+        desc: Rigorous scientific writing of medical content for communication in conferences,
+                                        scientific manuscript publication, and high-level reporting.
+
+
+  
+  configuration:
+    logo: ./assets/images/logo.png
+    nav_icon: ./assets/images/nav_icon.png
+    title: We are a R&D Laboratory for
+    desc: Real World Evidence,
+          Implementation Science,
+          Scientific Consulting
+
+    # set color code  
+    bg_color: blue
+    btn_color: blue
+    # Label Names
+    services: Services
+    about_us: About Us
+    how_we_work: How we work
+    team: Team
+    certifications: Certifications
+    partnerships: Partnerships
+    recentwork: Recent work
+    news: News
+    contact_us: Contact
+    # set true false for section you want to display
+    services_section: true
+    about_section: true
+    how_we_work_section: true
+    team_section: true
+    certifications_section: true
+    partnerships_section: true
+    recentwork_section: true
+    news_section: true
+    contact_us_section: true
+    footer_section: true

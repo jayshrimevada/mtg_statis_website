@@ -1,0 +1,278 @@
+<!-- counter begin -->
+<div class="team_main" id="team">
+    <div class="container team_main pb-0">
+        <img src="{{ config.extra.team.bg_image }}" class="our_teamshap" alt="">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-12">
+                <div class="teamtitlebox">
+                    <p>{{ config.extra.team.title_line_one }}</p>
+                    <h5>{{ config.extra.team.title_line_two }}</h5>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-12">
+                <p class="font-weight-light pt-5">{{ config.extra.team.desc }}</p>
+            </div>
+        </div>
+        <div class="row pt-4">
+            {% for item in config.extra.team.members %}
+            <div class="col-lg-3 col-md-4 col-12">
+                <div class="team_card">
+                    <div class="team_img">
+                        <img src="{{ item.image }}" class="img-fluid" alt="">
+                    </div>
+                    <div class="team_text">
+                        <div class="team_name">
+                            <h5>{{ item.name }} <span>{{ item.stream }}</span></h5>
+                            <p>{{ item.designation }}</p>
+                            <div class="teamsocial_iocn">
+                                <img src="{{ config.extra.team.member_in_icon }}" class="img-fluid" alt="">
+                                <img src="{{ config.extra.team.member_linkedin_icon }}" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- <div class="col-lg-3 col-md-4 col-12">
+                <div class="team_card">
+                    <div class="team_img">
+                        <img src="./assets/images/team/team.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="team_text">
+                        <div class="team_name">
+                            <h5>Nome e sobrenome <span>MD ME</span></h5>
+                            <p>Chief Executive Officer</p>
+                            <div class="teamsocial_iocn">
+                                <img src="./assets/images/board/in_icon.png" class="img-fluid" alt="">
+                                <img src="./assets/images/board/id_icon.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <div class="team_card">
+                    <div class="team_img">
+                        <img src="./assets/images/team/team.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="team_text">
+                        <div class="team_name">
+                            <h5>Nome e sobrenome <span>MD ME</span></h5>
+                            <p>Chief Executive Officer</p>
+                            <div class="teamsocial_iocn">
+                                <img src="./assets/images/board/in_icon.png" class="img-fluid" alt="">
+                                <img src="./assets/images/board/id_icon.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <div class="team_card">
+                    <div class="team_img">
+                        <img src="./assets/images/team/team.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="team_text">
+                        <div class="team_name">
+                            <h5>Nome e sobrenome <span>MD ME</span></h5>
+                            <p>Chief Executive Officer</p>
+                            <div class="teamsocial_iocn">
+                                <img src="./assets/images/board/in_icon.png" class="img-fluid" alt="">
+                                <img src="./assets/images/board/id_icon.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <div class="team_card">
+                    <div class="team_img">
+                        <img src="./assets/images/team/team.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="team_text">
+                        <div class="team_name">
+                            <h5>Nome e sobrenome <span>MD ME</span></h5>
+                            <p>Chief Executive Officer</p>
+                            <div class="teamsocial_iocn">
+                                <img src="./assets/images/board/in_icon.png" class="img-fluid" alt="">
+                                <img src="./assets/images/board/id_icon.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <div class="team_card">
+                    <div class="team_img">
+                        <img src="./assets/images/team/team.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="team_text">
+                        <div class="team_name">
+                            <h5>Nome e sobrenome <span>MD ME</span></h5>
+                            <p>Chief Executive Officer</p>
+                            <div class="teamsocial_iocn">
+                                <img src="./assets/images/board/in_icon.png" class="img-fluid" alt="">
+                                <img src="./assets/images/board/id_icon.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <div class="team_card">
+                    <div class="team_img">
+                        <img src="./assets/images/team/team.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="team_text">
+                        <div class="team_name">
+                            <h5>Nome e sobrenome <span>MD ME</span></h5>
+                            <p>Chief Executive Officer</p>
+                            <div class="teamsocial_iocn">
+                                <img src="./assets/images/board/in_icon.png" class="img-fluid" alt="">
+                                <img src="./assets/images/board/id_icon.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+                <div class="team_card">
+                    <div class="team_img">
+                        <img src="./assets/images/team/team.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="team_text">
+                        <div class="team_name">
+                            <h5>Nome e sobrenome <span>MD ME</span></h5>
+                            <p>Chief Executive Officer</p>
+                            <div class="teamsocial_iocn">
+                                <img src="./assets/images/board/in_icon.png" class="img-fluid" alt="">
+                                <img src="./assets/images/board/id_icon.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+</div>
+<!-- counter end -->
+
+<!-- team begin -->
+<div class="expert_mainsec pb-5" id="Advisors">
+    <div class="container">
+        <img src="{{ config.extra.team.advisor.bg_image }}" class="expert_shape img-fluid" alt="">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-12">
+                <div class="teamtitlebox">
+                    <p>{{ config.extra.team.advisor.title_line_one }}</p>
+                    <h5>{{ config.extra.team.advisor.title_line_two }}</h5>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-12">
+                <p class="font-weight-light pt-5 text-white">{{ config.extra.team.advisor.desc }}</p>
+            </div>
+        </div>
+        <div class="row pt-4">
+            {% for item in config.extra.team.advisor.members %}
+            <div class="col-lg-4 col-md-6 col-12 gridspace">
+                <div class="expert_card">
+                    <div class="expert_img">
+                        <img src="{{ item.image }}" class="img-fluid" alt="">
+                    </div>
+                    <div class="expert_text">
+                        <div class="expert_name">
+                            <h5>{{ item.name }}<span>{{ item.stream }}</span></h5>
+                            <p>{{ item.designation }}</p>
+                            <div class="expert_arrow_icon">
+                                <img src="{{ item.arrow_icon }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- <div class="col-lg-4 col-md-6 col-12 gridspace">
+                <div class="expert_card">
+                    <div class="expert_img">
+                        <img src="./assets/images/expert/expert_02.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="expert_text">
+                        <div class="expert_name">
+                            <h5>Francisco Araújo<span>MD PhD</span></h5>
+                            <p>Internal Medicine</p>
+                            <div class="expert_arrow_icon">
+                                <img src="./assets/images/board/Rectangle_icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 gridspace">
+                <div class="expert_card">
+                    <div class="expert_img">
+                        <img src="./assets/images/expert/expert_03.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="expert_text">
+                        <div class="expert_name">
+                            <h5>Carla Santos-Araújo<span>MD PhD</span></h5>
+                            <p>Nephrology</p>
+                            <div class="expert_arrow_icon">
+                                <img src="./assets/images/board/Rectangle_icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 gridspace">
+                <div class="expert_card">
+                    <div class="expert_img">
+                        <img src="./assets/images/expert/expert_04.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="expert_text">
+                        <div class="expert_name">
+                            <h5>Mariana Brandão<span>MD PhD</span></h5>
+                            <p>Oncology</p>
+                            <div class="expert_arrow_icon">
+                                <img src="./assets/images/board/Rectangle_icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 gridspace">
+                <div class="expert_card">
+                    <div class="expert_img">
+                        <img src="./assets/images/expert/expert_05.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="expert_text">
+                        <div class="expert_name">
+                            <h5>Dulce Pinto<span>RN MSc MBA</span></h5>
+                            <p>Executive Management</p>
+                            <div class="expert_arrow_icon">
+                                <img src="./assets/images/board/Rectangle_icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 gridspace">
+                <div class="expert_card">
+                    <div class="expert_img">
+                        <img src="./assets/images/expert/expert_06.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="expert_text">
+                        <div class="expert_name">
+                            <h5>Cristina Jácome<span>MSc PhD</span></h5>
+                            <p>Physiotherapy</p>
+                            <div class="expert_arrow_icon">
+                                <img src="./assets/images/board/Rectangle_icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- team end -->
